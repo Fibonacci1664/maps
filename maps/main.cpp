@@ -24,7 +24,6 @@ void test_map(T& map)
 	map.add("Bob", 37);
 	assert(map.is_present("Bob"));
 	assert(map.get("Bob") == 37);
-	//assert(map.get("Andy") == 37);
 	map.print();
 
 	cout << "Test adding multiple items\n";
@@ -65,13 +64,13 @@ void test_map(T& map)
 
 int main(int argc, char *argv[])
 {
-	cout << "-- Testing CustomMap --\n";
+	/*cout << "-- Testing CustomMap --\n";
 	CustomMap<string, int> cm_ages;
-	test_map(cm_ages);
+	test_map(cm_ages);*/
 
-	//cout << "-- Testing CustomHashTable --\n";
-	//CustomHashTable<string, int> ht_ages;
-	//test_map(ht_ages);
+	cout << "-- Testing CustomHashTable --\n";
+	CustomHashTable<string, int> ht_ages;
+	test_map(ht_ages);
 
 	//cout << "-- Testing CustomOAHashTable --\n";
 	//CustomOAHashTable<string, int> oa_ages;
